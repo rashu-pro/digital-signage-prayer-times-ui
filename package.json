@@ -1,0 +1,28 @@
+{
+  "name": "digital-signage-prayer-times",
+  "version": "1.0.0",
+  "description": "Digital Signage (prayer times)",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "sass assets/sass:assets/css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashu-pro/digital-signage-prayer-times.git"
+  },
+  "keywords": [
+    "digital",
+    "signage",
+    "prayer",
+    "times",
+    "tv",
+    "screen",
+    "announcements"
+  ],
+  "author": "rashu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rashu-pro/digital-signage-prayer-times/issues"
+  },
+  "homepage": "https://github.com/rashu-pro/digital-signage-prayer-times#readme"
+}
