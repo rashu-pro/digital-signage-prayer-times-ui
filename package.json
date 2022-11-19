@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/rashu-pro/digital-signage-prayer-times/issues"
   },
-  "homepage": "https://github.com/rashu-pro/digital-signage-prayer-times#readme"
+  "homepage": "https://github.com/rashu-pro/digital-signage-prayer-times#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "jquery": "^3.6.1"
+  }
 }

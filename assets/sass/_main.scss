@@ -3,9 +3,186 @@ body{
   font-size: 16px;
   line-height: 1.7;
   box-sizing: border-box;
+  color:#ffffff;
 }
 
 h2,h3,h4,h5,h6{
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+.title{
+  &-medium{
+    font-size: 2.3rem;
+  }
+  &-big{
+    font-size:3.6rem;
+  }
+}
+
+.divider{
+  height: 3px;
+  border-radius:8px;
+  background: #fff;
+  display: inline-block;
+  margin:0 auto;
+  width:120px;
+  &-holder{
+
+  }
+}
+
+.border-big{
+  border:10px solid #000;
+  border-radius: 15px;
+}
+.ds{
+  &-main{
+    &.v2{
+      .ds{
+        &-info{
+          border:4px dashed #59c089;
+          &-head{
+            background-color: transparent;
+          }
+        }
+
+        &-body{
+          .table{
+            &-holder{
+              border:2px solid #fff;
+              border-radius: 5px;
+              .table{
+                border:0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-inner{
+    max-width:650px;
+    margin:0 auto;
+  }
+
+  &-wrapper{
+    max-width:800px;
+    margin:0 auto;
+    background-color: $color-bg-green;
+  }
+
+  &-body{
+    font-size: 1.4rem;
+    .table{
+      tr{
+        th,td{
+          padding: 15px 20px;
+          text-align: center;
+        }
+        th{
+          font-size: 1.65rem;
+        }
+        td{
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+
+        &.next-time{
+          border-top:3px solid $color-bg-green;
+          background: #000;
+        }
+      }
+    }
+  }
+
+  &-foot{
+    //background: #0d6838;
+    //background: $color-bg-dark;
+    margin:-1px;
+    .table{
+      border:0;
+      td,th{
+        font-size:1.6rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-info{
+    border: 4px solid #59c089;
+    border-radius: 4px;
+    &-head{
+    }
+    &-head{
+      background: #59c089;
+    }
+    &-body{
+
+    }
+
+  }
+}
+
+.text-green{
+  color:$color-bg-green;
+}
+
+.table{
+  //background-color: $color-bg-green;
+  color:#fff;
+  border: 2px solid #1da15b;
+  border-top:0;
+  &-holder{
+    max-width:650px;
+    margin:0 auto;
+  }
+
+  &-striped{
+    &>tbody{
+      &>tr{
+        &:nth-of-type(odd){
+          &> *{
+            color:#fff;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.font-oswald{
+  font-family:'Oswald',sans-serif;
+}
+.time-big{
+  letter-spacing: 3px;
+}
+.bg-dark{
+  background-color: $color-bg-dark;
+}
+.ls-1{
+  letter-spacing: 1px;
+}
+.logo-holder{
+  img{
+    max-height:80px;
+  }
+  &.credit-logo{
+    img{
+      max-height:80px;
+    }
+  }
+}
+.jummah-holder{
+  background: #fff;
+  padding:20px 15px 10px 15px;
+  border-radius: 8px;
+  color:#000;
+  margin-bottom:30px;
+  .table{
+    td,th{
+      color:#000;
+    }
+  }
 }
