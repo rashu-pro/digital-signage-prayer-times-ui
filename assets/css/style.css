@@ -8412,10 +8412,30 @@ textarea.form-control-lg {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 28px;
   line-height: 1.7;
   box-sizing: border-box;
   color: #ffffff;
+}
+
+body, html {
+  font-size: 12px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  body, html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  body, html {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  body, html {
+    font-size: 28px;
+  }
 }
 
 h2, h3, h4, h5, h6 {
@@ -8457,41 +8477,62 @@ h2, h3, h4, h5, h6 {
   border: 0;
 }
 .ds-inner {
-  max-width: 650px;
+  max-width: 90%;
   margin: 0 auto;
 }
 .ds-wrapper {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   background-color: #1FAA60;
+}
+@media (min-width: 992px) {
+  .ds-wrapper {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .ds-wrapper {
+    max-width: 1200px;
+  }
 }
 .ds-body {
   font-size: 1.4rem;
 }
 .ds-body .table tr th, .ds-body .table tr td {
-  padding: 15px 20px;
+  padding: 0.9rem 0.6rem;
   text-align: center;
 }
 .ds-body .table tr th {
-  font-size: 1.65rem;
+  font-size: 2.4rem;
 }
 .ds-body .table tr td {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .ds-body .table tr.next-time {
   border-top: 3px solid #1FAA60;
   background: #000;
 }
-.ds-foot {
-  margin: -1px;
+.ds-body .table-border-custom tr th {
+  border: 1px solid rgba(221, 221, 221, 0.1);
+  border-top: 0;
+  border-left: 0;
+}
+.ds-body .table-border-custom tr th:last-child {
+  border-right: 0;
+}
+.ds-body .table-border-custom tr td:not(:last-child) {
+  border-right: 1px solid rgba(221, 221, 221, 0.1);
+}
+.ds-body .table-prayer-times tr:last-child td, .ds-body .table-prayer-times tr:last-child th {
+  padding-bottom: 2.2rem;
 }
 .ds-foot .table {
   border: 0;
 }
 .ds-foot .table td, .ds-foot .table th {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 .ds-info {
   border: 4px solid #59c089;
@@ -8510,7 +8551,7 @@ h2, h3, h4, h5, h6 {
   border-top: 0;
 }
 .table-holder {
-  max-width: 650px;
+  max-width: 90%;
   margin: 0 auto;
 }
 .table-striped > tbody > tr:nth-of-type(odd) > * {
@@ -8549,6 +8590,14 @@ h2, h3, h4, h5, h6 {
 }
 .jummah-holder .table td, .jummah-holder .table th {
   color: #000;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .fs-2 {
+    font-size: 2.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

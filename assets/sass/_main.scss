@@ -1,15 +1,3 @@
-body{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  box-sizing: border-box;
-  color:#ffffff;
-}
-
-h2,h3,h4,h5,h6{
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
-}
 .title{
   &-medium{
     font-size: 2.3rem;
@@ -62,14 +50,23 @@ h2,h3,h4,h5,h6{
   }
 
   &-inner{
-    max-width:650px;
+    max-width:90%;
     margin:0 auto;
   }
 
   &-wrapper{
-    max-width:800px;
+    max-width: 100%;
     margin:0 auto;
     background-color: $color-bg-green;
+
+    @media (min-width:992px){
+      max-width: $screen-size-md;
+    }
+
+    @media (min-width:1200px){
+      max-width: $screen-size;
+    }
+
   }
 
   &-body{
@@ -77,14 +74,14 @@ h2,h3,h4,h5,h6{
     .table{
       tr{
         th,td{
-          padding: 15px 20px;
+          padding: 0.9rem 0.6rem;
           text-align: center;
         }
         th{
-          font-size: 1.65rem;
+          font-size: 2.4rem;
         }
         td{
-          font-size: 1.4rem;
+          font-size: 2rem;
           font-weight: 600;
         }
 
@@ -93,18 +90,45 @@ h2,h3,h4,h5,h6{
           background: #000;
         }
       }
+
+      &-border-custom{
+        tr{
+          th{
+            border:1px solid $border-gray;
+            border-top:0;
+            border-left:0;
+            &:last-child{
+              border-right:0;
+            }
+          }
+          td{
+            &:not(:last-child){
+              border-right:1px solid $border-gray;
+            }
+          }
+        }
+      }
+
+      &-prayer-times{
+        tr{
+          &:last-child{
+            td,th{
+              padding-bottom: 2.2rem;
+            }
+          }
+        }
+      }
     }
   }
 
   &-foot{
     //background: #0d6838;
     //background: $color-bg-dark;
-    margin:-1px;
     .table{
       border:0;
       td,th{
-        font-size:1.6rem;
-        font-weight: 600;
+        font-size:1.8rem;
+        font-weight: 700;
       }
     }
   }
@@ -134,7 +158,7 @@ h2,h3,h4,h5,h6{
   border: 2px solid #1da15b;
   border-top:0;
   &-holder{
-    max-width:650px;
+    max-width:90%;
     margin:0 auto;
   }
 
@@ -183,6 +207,14 @@ h2,h3,h4,h5,h6{
   .table{
     td,th{
       color:#000;
+      font-size:1.8rem;
+      font-weight: 700;
     }
+  }
+}
+
+@media (min-width: 1200px){
+  .fs-2{
+    font-size: 2.2rem;
   }
 }
